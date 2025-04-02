@@ -1,0 +1,33 @@
+<section class="formHolder">
+    <article class="formImage">
+        <img src="/img/port2.avif" />
+    </article>
+    <article class="contactWrap">
+        <h1 class="Laila" style="font-size: 40px; font-weight: bold; margin-bottom: 0px; line-height: 110%;">Get a Quote Today</h1>
+        <p style="margin-top: 0px;color: blue; font-size: 20px; font-weight: 600; margin-bottom: 20px;">Due to demand for our units please reach out to one of our Porta Spot team members for the most accurate and best price for you and your needs. Please feel free to reach out by email or by calling our business number!</p>
+        {{#if success}}
+        <p style="color:green">{{success}}</p>
+        {{/if}}
+
+        {{#if error}}
+        <p style="color:red">{{error}}</p>
+        {{/if}}
+        <form action="/contact" method="POST">
+        <div style="display: flex;">
+            <div style="width: 48%;">
+        <label>First Name<span style="color: red;">*</span></label>
+        <input name="fname"  required />
+        </div>
+        <div style="width: 48%; margin-left: auto;">
+        <label>Last Name<span style="color: red;">*</span></label>
+        <input name="lname" required />
+        </div>
+        </div>
+        <label>Email<span style="color: red;">*</span></label>
+        <input name="email" placeholder="Your Email" required />
+        <label>Message<span style="color: red;">*</span></label>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn1" style="background: blur; border: 1px solid blue; float: bottom;" type="submit">Send</button>
+        </form>
+    </article>
+</section>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="nav" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+        <a class="Laila" style="font-weight: bold; color: white; font-size: 20px; text-decoration: none;" href="/"><img style="width: 300px;" src="/img/p-logo.avif"/></a>
+        <div class="mobileHam" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="deskNav">
+            <a class="openSans" role="button" style="cursor: pointer!important;" href="/services">Services</a>
+            <a class="openSans" href="/about">About Us</a>
+            <a class="openSans" href="tel:+18016759584">801-675-9584</a>
+            <a class="btn1 openSans" href="/contact">Get A Quote</a>
+        </nav>
+        
+    </header>
+    <nav id="mobileNav" class="mobileNav" style="display: none;">
+            <a class="openSans" href="/word">Services</a>
+            <a class="openSans" href="/about">About Us</a>
+            <a class="openSans" href="tel:+18016759584">801-675-9584</a>
+            <a class="openSans" href="/contact">Contact Us</a>
+
+        </nav>
+  {{{body}}}
+  <section style="background: #white; color: blue; padding: 80px 50px;">
+      <div class="blueL"> </div>
+<h1 style="text-align: center; font-weight: bold;" class="Laila">PortaSpot</h1>
+  <article class="footLinks">
+      <a class="openSans" href="/services">Services</a>
+            <a class="openSans" href="/about">About Us</a>
+            <a class="openSans" href="tel:+18016759584">801-675-9584</a>
+            <a class="openSans" href="/contact">Get A Quote</a>
+  </article>
+<p style="color: #585858; font-size: 16px; margin: 20px; margin-top: 0px; text-align: center; max-width: 600px; margin: auto;">
+  We pride ourselves on providing the highest quality service in the industry. All of our units are in prime condition to give you the best possible experience.  
+  </p>
+  <article class="socials" style="margin: auto; ">
+  <a><img src="https://cdn.revmatics.ai/82253204634f67692cc1eebb4b7b78fe.png"/></a>
+      <a><img src="https://cdn.revmatics.ai/24a35f30f08895a0a0b9042fcc01bc5d.png"/></a>
+      <a><img src="https://cdn.revmatics.ai/b43c5d3cda182719fb72df9a9c632a1f.png"/></a>
+      <a><img src="https://cdn.revmatics.ai/c379ecec351312d81c239beadba4c0e4.png"/></a>
+  
+  </article>
+
+  <article style="display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap;">
+  <p style="color: #585858; font-size: 14px; text-align: center;">
+    Copyright © 2025 PortaSpot All rights reserved
+    </p>
+
+  </article>
+</section>
+</body>
+<script>
+ function toggleNav() {
+
+    let mobileNav = document.getElementById('mobileNav')
+        console.log(mobileNav.style.display)
+    if(mobileNav.style.display == "none"){
+        mobileNav.style.display = "block";
+    } else{
+        mobileNav.style.display = "none";
+    }
+ }
+</script>
+</html>
